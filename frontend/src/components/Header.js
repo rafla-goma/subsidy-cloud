@@ -24,11 +24,11 @@ const Header = ({ isLoggedIn, onLogout, sidebarWidth }) => {
                       <FaBell className="mr-1" /> 通知
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link to="/diagnosis" className="flex items-center hover:text-blue-200">
                       <FaBuilding className="mr-1" /> 企業診断
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                     <button onClick={onLogout} className="flex items-center hover:text-blue-200">
                       <FaSignOutAlt className="mr-1" /> ログアウト
