@@ -26,11 +26,14 @@
     "recharts": "^2.12.7",
     "web-vitals": "^2.1.4"
   },
+  "homepage": "https://rafla-goma.github.io/subsidy-cloud",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -52,6 +55,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.19",
+    "gh-pages": "^6.1.1",
     "postcss": "^8.4.39",
     "serverless": "^3.39.0",
     "serverless-python-requirements": "^6.1.0",

@@ -32,11 +32,11 @@ const FAQPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-pink-200 to-yellow-200 p-6 text-gray-900">
+    <div className="min-h-screen bg-gradient-to-b from-blue-700 to-purple-800 flex flex-col text-white">
       <h1 className="text-3xl font-bold mb-4">よくある質問</h1>
       <div className="space-y-4">
         {faqs.map((faq, index) => (
-          <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
+          <div key={index} className="bg-white text-black rounded-lg shadow-md overflow-hidden">
             <button
               className="w-full text-left p-4 flex justify-between items-center focus:outline-none"
               onClick={() => toggleAnswer(index)}
@@ -45,7 +45,7 @@ const FAQPage = () => {
               {openIndex === index ? <ChevronUp /> : <ChevronDown />}
             </button>
             {openIndex === index && (
-              <div className="p-4 bg-gray-50 border-t">
+              <div className="p-4 bg-gray-50 border-t text-black">
                 <p>{faq.answer}</p>
               </div>
             )}

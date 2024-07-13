@@ -47,7 +47,7 @@ const CommunityForumPage = () => {
         </button>
       </form>
 
-      <div className="bg-white rounded-lg shadow overflow-hidden">
+      <div className="flex-1 flex flex-col min-h-screen transition-transform duration-300 bg-gradient-to-b from-blue-900 to-indigo-900 text-white">
         <table className="w-full">
           <thead className="bg-gray-50">
             <tr>

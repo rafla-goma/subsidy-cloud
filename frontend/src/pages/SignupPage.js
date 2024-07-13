@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import Header from '../components/Header';
+import { FaSignInAlt, FaUserPlus, FaBuilding, FaQuestionCircle } from 'react-icons/fa';  // アイコンをインポート
 
 const SignupPage = ({ setIsLoggedIn }) => {
   const [formData, setFormData] = useState({
@@ -26,10 +26,30 @@ const SignupPage = ({ setIsLoggedIn }) => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-900 to-purple-900">
-      <Header isLoggedIn={false} />
-      <div className="container mx-auto px-4 pt-20">
-        <div className="max-w-md mx-auto bg-white rounded-lg shadow-lg p-8 mt-8">
+    <div className="min-h-screen bg-gradient-to-b from-blue-700 to-purple-800 flex flex-col">
+      <header className="bg-blue-600 text-white p-4">
+        <div className="container mx-auto flex justify-between items-center">
+          <h1 className="text-2xl font-bold">補助金クラウド</h1>
+          <nav>
+            <ul className="flex space-x-4">
+              <li>
+                <Link to="/login" className="hover:text-gray-300">ログイン</Link>
+              </li>
+              <li>
+                <Link to="/signup" className="hover:text-gray-300">アカウント作成</Link>
+              </li>
+              <li>
+                <Link to="/diagnosis" className="hover:text-gray-300">企業診断</Link>
+              </li>
+              <li>
+                <Link to="/faq" className="hover:text-gray-300">FAQ</Link>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main className="flex-grow flex items-center justify-center p-4">
+        <div className="w-full max-w-md bg-white rounded-lg shadow-lg p-8">
           <h2 className="text-2xl font-bold mb-6 text-center">アカウント作成</h2>
           <form onSubmit={handleSubmit}>
             <div className="mb-4">
@@ -121,7 +141,7 @@ const SignupPage = ({ setIsLoggedIn }) => {
             </div>
           </form>
         </div>
-      </div>
+      </main>
     </div>
   );
 };

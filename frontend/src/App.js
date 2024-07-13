@@ -40,7 +40,7 @@ const AppContent = () => {
 
   return (
     <div className="flex min-h-screen">
-      {isLoggedIn && <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />}
+      {isLoggedIn && <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} isLoggedIn={isLoggedIn} />}
       <div className={`flex-1 flex flex-col transition-all duration-300`} style={{ marginLeft: isLoggedIn ? `${sidebarWidth}px` : '0' }}>
         {shouldShowHeader && (
           <Header isLoggedIn={isLoggedIn} onLogout={handleLogout} sidebarWidth={isLoggedIn ? sidebarWidth : 0} />
@@ -51,7 +51,7 @@ const AppContent = () => {
             <Route path="/home" element={isLoggedIn ? <HomePage /> : <Navigate to="/login" />} />
             <Route path="/login" element={<LoginPage setIsLoggedIn={setIsLoggedIn} />} />
             <Route path="/signup" element={<SignupPage setIsLoggedIn={setIsLoggedIn} />} />
-            <Route path="/diagnosis" element={isLoggedIn ? <DiagnosisPage /> : <Navigate to="/login" />} />
+            <Route path="/diagnosis" element={<DiagnosisPage />} />
             <Route path="/subsidy/:id" element={isLoggedIn ? <SubsidyDetailPage /> : <Navigate to="/login" />} />
             <Route path="/subsidies" element={isLoggedIn ? <SubsidyListPage /> : <Navigate to="/login" />} />
             <Route path="/category/:categoryName" element={isLoggedIn ? <CategorySubsidiesPage /> : <Navigate to="/login" />} />
