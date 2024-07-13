@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/subsidy-cloud/static/css/main.cccc7247.css",
+    "main.js": "/subsidy-cloud/static/js/main.2dd7d868.js",
+    "index.html": "/subsidy-cloud/index.html",
+    "main.cccc7247.css.map": "/subsidy-cloud/static/css/main.cccc7247.css.map",
+    "main.2dd7d868.js.map": "/subsidy-cloud/static/js/main.2dd7d868.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cccc7247.css",
+    "static/js/main.2dd7d868.js"
+  ]
+}
