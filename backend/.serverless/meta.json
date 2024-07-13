@@ -1,0 +1,157 @@
+{
+  "C:\\Users\\haruh\\OneDrive\\デスクトップ\\subsidy-cloud-1\\backend": {
+    "versionSfCore": null,
+    "versionFramework": "4.1.12",
+    "isWithinCompose": false,
+    "isCompose": false,
+    "composeOrgName": null,
+    "composeResolverProviders": {
+      "opt": {
+        "instance": {
+          "credentials": "<REDACTED>",
+          "serviceConfigFile": {
+            "service": "subsidy-navi-backend",
+            "provider": {
+              "name": "aws",
+              "runtime": "python3.11",
+              "stage": "dev",
+              "region": "ap-northeast-1",
+              "versionFunctions": true
+            },
+            "functions": {
+              "hello": {
+                "handler": "handler.hello",
+                "events": [
+                  {
+                    "http": {
+                      "path": "hello",
+                      "method": "get"
+                    }
+                  }
+                ]
+              }
+            },
+            "plugins": [
+              "serverless-python-requirements"
+            ],
+            "custom": {
+              "pythonRequirements": {
+                "dockerizePip": "non-linux"
+              }
+            }
+          },
+          "configFileDirPath": "C:\\Users\\haruh\\OneDrive\\デスクトップ\\subsidy-cloud-1\\backend",
+          "config": {
+            "type": "opt"
+          },
+          "options": {
+            "template": "aws-python3"
+          }
+        },
+        "resolvers": {}
+      }
+    },
+    "composeServiceName": null,
+    "servicePath": "C:\\Users\\haruh\\OneDrive\\デスクトップ\\subsidy-cloud-1\\backend",
+    "serviceConfigFileName": "serverless.yml",
+    "service": {
+      "service": "subsidy-navi-backend",
+      "provider": {
+        "name": "aws",
+        "runtime": "python3.11",
+        "stage": "dev",
+        "region": "ap-northeast-1",
+        "versionFunctions": true
+      },
+      "functions": {
+        "hello": {
+          "handler": "handler.hello",
+          "events": [
+            {
+              "http": {
+                "path": "hello",
+                "method": "get"
+              }
+            }
+          ]
+        }
+      },
+      "plugins": [
+        "serverless-python-requirements"
+      ],
+      "custom": {
+        "pythonRequirements": {
+          "dockerizePip": "non-linux"
+        }
+      }
+    },
+    "serviceRawFile": "service: subsidy-navi-backend\r\n\r\nprovider:\r\n  name: aws\r\n  runtime: python3.11\r\n  stage: ${opt:stage, 'dev'}\r\n  region: ap-northeast-1\r\n\r\nfunctions:\r\n  hello:\r\n    handler: handler.hello\r\n    events:\r\n      - http:\r\n          path: hello\r\n          method: get\r\n\r\nplugins:\r\n  - serverless-python-requirements\r\n\r\ncustom:\r\n  pythonRequirements:\r\n    dockerizePip: non-linux",
+    "command": [
+      "create"
+    ],
+    "options": {
+      "template": "aws-python3"
+    },
+    "error": {
+      "message": "Serverless plugin \"serverless-python-requirements\" not found. Make sure it's installed and listed in the \"plugins\" section of your serverless config file. Use the --debug flag to learn more.",
+      "stack": "ServerlessError2: Serverless plugin \"serverless-python-requirements\" not found. Make sure it's installed and listed in the \"plugins\" section of your serverless config file. Use the --debug flag to learn more.\n    at PluginManager.resolveServicePlugins (file:///C:/Users/haruh/.serverless/releases/4.1.12/package/dist/sf-core.js:854:2669)\n    at async PluginManager.loadAllPlugins (file:///C:/Users/haruh/.serverless/releases/4.1.12/package/dist/sf-core.js:854:1293)\n    at async Serverless.init (file:///C:/Users/haruh/.serverless/releases/4.1.12/package/dist/sf-core.js:861:9760)\n    at async runFramework (file:///C:/Users/haruh/.serverless/releases/4.1.12/package/dist/sf-core.js:909:880)\n    at async route (file:///C:/Users/haruh/.serverless/releases/4.1.12/package/dist/sf-core.js:920:16046)\n    at async Object.run2 [as run] (file:///C:/Users/haruh/.serverless/releases/4.1.12/package/dist/sf-core.js:920:16444)\n    at async run3 (file:///C:/Users/haruh/.serverless/releases/4.1.12/package/dist/sf-core.js:920:17704)",
+      "code": "PLUGIN_NOT_FOUND"
+    },
+    "params": {},
+    "machineId": "7b8c9223efd737a00d4b8cb41bc18a85",
+    "accessKeyV2": "<REDACTED>",
+    "accessKeyV1": "<REDACTED>",
+    "orgId": "20ab6827-a80e-4d69-a299-025e5a36c7bf",
+    "orgName": "raflagoma",
+    "userId": "ZYYD6Dl0vKpcQRHJLW",
+    "dashboard": {
+      "isEnabledForService": false,
+      "requiredAuthentication": true,
+      "orgFeaturesInUse": null,
+      "orgObservabilityIntegrations": null,
+      "serviceAppId": null,
+      "serviceProvider": null,
+      "instanceParameters": null
+    },
+    "userName": "raflagoma",
+    "subscription": null,
+    "userEmail": "haru.amano313@gmail.com",
+    "serviceProviderAwsCredentials": "<REDACTED>",
+    "serviceProviderAwsAccountId": "058264202383",
+    "versionSf": "4.1.12",
+    "serviceProviderAwsCfStackId": "arn:aws:cloudformation:ap-northeast-1:058264202383:stack/ai-life-coach-prod/495f9180-3ed9-11ef-8a6c-0e526d3ba4df",
+    "serviceProviderAwsCfStackCreated": "2024-07-10T16:27:23.233Z",
+    "serviceProviderAwsCfStackUpdated": "2024-07-11T05:46:33.163Z",
+    "serviceProviderAwsCfStackStatus": "UPDATE_COMPLETE",
+    "serviceProviderAwsCfStackOutputs": [
+      {
+        "OutputKey": "EvaluateMealLambdaFunctionQualifiedArn",
+        "OutputValue": "arn:aws:lambda:ap-northeast-1:058264202383:function:ai-life-coach-prod-evaluateMeal:5",
+        "Description": "Current Lambda function version",
+        "ExportName": "sls-ai-life-coach-prod-EvaluateMealLambdaFunctionQualifiedArn"
+      },
+      {
+        "OutputKey": "GetAdviceLambdaFunctionQualifiedArn",
+        "OutputValue": "arn:aws:lambda:ap-northeast-1:058264202383:function:ai-life-coach-prod-getAdvice:13",
+        "Description": "Current Lambda function version",
+        "ExportName": "sls-ai-life-coach-prod-GetAdviceLambdaFunctionQualifiedArn"
+      },
+      {
+        "OutputKey": "ServiceEndpoint",
+        "OutputValue": "https://vsqrsab46h.execute-api.ap-northeast-1.amazonaws.com/prod",
+        "Description": "URL of the service endpoint",
+        "ExportName": "sls-ai-life-coach-prod-ServiceEndpoint"
+      },
+      {
+        "OutputKey": "CloudFrontDomainName",
+        "OutputValue": "dum038tyc8pii.cloudfront.net",
+        "Description": "Domain name of the CloudFront distribution"
+      },
+      {
+        "OutputKey": "ServerlessDeploymentBucketName",
+        "OutputValue": "ai-life-coach-prod-serverlessdeploymentbucket-ktu3frwebvt9",
+        "ExportName": "sls-ai-life-coach-prod-ServerlessDeploymentBucketName"
+      }
+    ]
+  }
+}
