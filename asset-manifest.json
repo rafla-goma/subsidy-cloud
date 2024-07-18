@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/subsidy-cloud/static/css/main.17aa68c0.css",
-    "main.js": "/subsidy-cloud/static/js/main.c02badd9.js",
+    "main.css": "/subsidy-cloud/static/css/main.e0a47e33.css",
+    "main.js": "/subsidy-cloud/static/js/main.3281064a.js",
     "index.html": "/subsidy-cloud/index.html",
-    "main.17aa68c0.css.map": "/subsidy-cloud/static/css/main.17aa68c0.css.map",
-    "main.c02badd9.js.map": "/subsidy-cloud/static/js/main.c02badd9.js.map"
+    "main.e0a47e33.css.map": "/subsidy-cloud/static/css/main.e0a47e33.css.map",
+    "main.3281064a.js.map": "/subsidy-cloud/static/js/main.3281064a.js.map"
   },
   "entrypoints": [
-    "static/css/main.17aa68c0.css",
-    "static/js/main.c02badd9.js"
+    "static/css/main.e0a47e33.css",
+    "static/js/main.3281064a.js"
   ]
 }
